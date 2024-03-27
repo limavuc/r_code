@@ -1,5 +1,7 @@
 hier_reg <- function(m0, m1, m2){
   # this function calculates change in R^2 between any three models in a hierarchical regression. 
+  # takes three models, though more may be edited in
+  # m0 = null model with no predictors, lm(DV~1, data = df)
   inject.dots <- function(df) {names(df) <- sub(" ", ".", names(df));df}
 
   # Rename SS column
